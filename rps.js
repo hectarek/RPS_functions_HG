@@ -75,8 +75,12 @@ function playGame(player1, player2, playUntil) {
             console.log("It was a tie!")
         }
 
-        if (player1Score || player2Score > Math.round(playUntil/2)) {
+        if (player1Score >= Math.round(playUntil/2)) {
             break;
+        } else if (player2Score >= Math.round(playUntil/2)) {
+            break;
+        } else {
+            continue;
         }
 
     }
