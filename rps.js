@@ -32,12 +32,20 @@ var winResults = {
     scissors: 'paper'
 }
 
+//Meant to set up the elements with player names and such until fillable names are implemented
+function onPageLoad() {
+    document.getElementsByClassName("player1Name").innerHTML = player1.name
+    document.getElementsByClassName("player2Name").innerHTML = player2.name
+};
 
 //set up round function to play one match of RPS 
 function round() {
     
     let player1Hand = player1.hand();
     let player2Hand = player2.hand();
+
+    document.getElementsByClassName("player1Hand").innerHTML = player1Hand
+    document.getElementsByClassName("player2Hand").innerHTML = player2Hand
 
     console.log(player1.name, " threw ", player1Hand)
     console.log(player2.name, " threw ", player2Hand)
@@ -101,6 +109,7 @@ function playGame(player1, player2, playUntil) {
     }
 
 }
+
 
 //Play 5 Games
 console.log(playGame(player1, player2, 5))

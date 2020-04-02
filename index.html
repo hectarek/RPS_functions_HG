@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" src='style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Hector's RPS Site</title>
+
+</head>
+
+<body onload="onPageLoad()">
+    
+    <div class="container text-center">
+        
+        <h1 class="m-4 p-4">Hector's Scissors, Paper, Rock Game</h1>
+        
+        <div class="row m-4 p-4">
+            <div class="col-6">
+                <h2 class="player1Name">Player 1</h2>
+                <p><span class="player1Name">Player 1</span>'s Score: <span class="player1Score">0</span></p>
+    
+                <p><span class="player1Name">player 1</span>'s Hand: <span class="player1Hand">hand</span> </p>
+            </div>
+    
+            <div class="col-6">
+                <h2 class="player2Name">Player 2</h2>
+                <p><span class="player2Name">player 2</span>'s Score: <span class="player2Score">0</span></p>
+    
+                <p><span class="player2Name">player 2</span>'s Hand: <span class="player2Hand">hand</span> </p>
+            </div>
+        </div>
+        
+
+
+        <div class="row m-4 p-4">
+            <div class="col-12">
+                <h3>Round: <span class="roundNum">0</span> it's <span class="player1Name">Player 1</span> VS. <span class="player2Name">Player 2</span></h3>
+            </div>
+        </div>
+
+        <div class="row m-4 p-4">
+            <div class="col-12">
+                <h3 id="result">*Result*</h3>
+            </div>
+        </div>
+
+        <div class="row m-4 p-4">
+            <div class="col-8">
+                <h2>Click Here to Reset Match</h2>
+            </div>
+            <div class="col-4">
+                <button class='btn btn-primary m-2 p-2'>Reset</button>
+            </div>
+        </div>
+
+        <div class="row m-4 p-4">
+            <div class="col-8">
+                <h2>Click below to play a Round</h2>
+            </div>
+            <div class="col-4">
+                <button class='btn btn-secondary m-2 p-2' id="playRound" onclick="round()">Scissors, Paper, Rock</button>
+            </div>
+        </div>
+
+        <div class="row m-4 p-4">
+            <!-- <h2>click below to play a Match</h2>
+            <button>Scissors, Paper, Rock</button> -->
+        </div>
+        
+        <div class="row m-4 p-4">
+            <!-- <h2>click below to play a Tounament</h2>
+            <button>Scissors, Paper, Rock</button> -->
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="rps.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
