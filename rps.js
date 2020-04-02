@@ -33,10 +33,18 @@ var winResults = {
 }
 
 //Meant to set up the elements with player names and such until fillable names are implemented
+
 function onPageLoad() {
-    document.getElementsByClassName("player1Name").innerHTML = player1.name
-    document.getElementsByClassName("player2Name").innerHTML = player2.name
+    var player1NameTag = document.getElementsByClassName("player1Name");
+    player1NameTag.innerHTML = player1.name
+
+    console.log(player1NameTag)
+
+    var player2NameTag = document.getElementsByClassName("player2Name")
+    player2NameTag.innerHTML = player2.name
 };
+
+onPageLoad();
 
 //set up round function to play one match of RPS 
 function round() {
@@ -62,6 +70,10 @@ function round() {
     }
     
 }
+
+var playButton = document.getElementById('playRound');
+
+playButton.addEventListener('click', round);
 
 function playGame(player1, player2, playUntil) {
 
