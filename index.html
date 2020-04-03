@@ -9,7 +9,7 @@
 
 </head>
 
-<body onload="onPageLoad()">
+<body>
     
     <div class="container text-center">
         
@@ -35,7 +35,7 @@
 
         <div class="row m-4 p-4">
             <div class="col-12">
-                <h3>Round: <span class="roundNum">0</span> it's <span class="player1Name">Player 1</span> VS. <span class="player2Name">Player 2</span></h3>
+                <h3>Round: <span id="roundNum">0</span> it's <span class="player1Name">Player 1</span> VS. <span class="player2Name">Player 2</span></h3>
             </div>
         </div>
 
@@ -50,7 +50,7 @@
                 <h2>Click Here to Reset Match</h2>
             </div>
             <div class="col-4">
-                <button class='btn btn-primary m-2 p-2'>Reset</button>
+                <button class='btn btn-secondary m-2 p-2'>Reset</button>
             </div>
         </div>
 
@@ -59,13 +59,17 @@
                 <h2>Click below to play a Round</h2>
             </div>
             <div class="col-4">
-                <button class='btn btn-secondary m-2 p-2' id="playRound">Scissors, Paper, Rock</button>
+                <button class='btn btn-primary m-2 p-2' id="playRound">Scissors, Paper, Rock</button>
             </div>
         </div>
 
         <div class="row m-4 p-4">
-            <!-- <h2>click below to play a Match</h2>
-            <button>Scissors, Paper, Rock</button> -->
+            <div class="col-8">
+                <h2>Click below to play a Game</h2>
+            </div>
+            <div class="col-4">
+                <button class='btn btn-success m-2 p-2' id="playGame">Scissors, Paper, Rock</button>
+            </div>
         </div>
         
         <div class="row m-4 p-4">
